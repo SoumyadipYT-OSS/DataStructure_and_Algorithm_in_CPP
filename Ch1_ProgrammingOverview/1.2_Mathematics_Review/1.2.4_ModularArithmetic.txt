@@ -1,0 +1,16 @@
+﻿We say that A is congruent to B modulo N, written A ≡ B (mod N), 
+if N divides A − B. Intuitively, this means that the remainder 
+is the same when either A or B is divided by N. Thus, 81 ≡ 61 ≡ 1 (mod 10). 
+As with equality, if A ≡ B (mod N), then A + C ≡ B + C (mod N) and AD ≡ BD (mod N).
+
+
+First, if N is prime, then ab ≡ 0 (mod N) is true if and only if a ≡ 0 (mod N)
+or b ≡ 0 (mod N). In other words, if a prime number N divides a product of two
+numbers, it divides at least one of the two numbers.
+Second, if N is prime, then the equation ax ≡ 1 (mod N) has a unique solution
+(mod N) for all 0 < a < N. This solution, 0 < x < N, is the multiplicative inverse.
+Third, if N is prime, then the equation x2 ≡ a (mod N) has either two solutions
+(mod N) for all 0 < a < N, or it has no solutions.
+There are many theorems that apply to modular arithmetic, and some of them require
+extraordinary proofs in number theory. We will use modular arithmetic sparingly, and the
+preceding theorems will suffice.
