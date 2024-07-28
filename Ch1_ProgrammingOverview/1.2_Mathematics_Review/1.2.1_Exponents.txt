@@ -1,0 +1,10 @@
+﻿This section lists some of the basic formulas you need to memorize, or be able to derive,
+and reviews basic proof techniques.
+
+Exponents
+
+	• XᴬXᴮ = Xᴬ⁺ᴮ
+	• XᴬXᴮ = Xᴬ⁻ᴮ
+	• (Xᴬ)ᴮ = Xᴬᴮ
+	• Xᴺ + Xᴺ = 2Xᴺ = X²ᴺ
+	• 2ᴺ + 2ᴺ = 2ᴺ⁺¹
