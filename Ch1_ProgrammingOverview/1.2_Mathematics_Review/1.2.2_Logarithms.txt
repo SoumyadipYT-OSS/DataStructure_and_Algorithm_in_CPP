@@ -1,0 +1,59 @@
+﻿In computer science, all logarithms are to the base 2 unless specified otherwise.
+
+Definition 1.1
+================
+
+Xᴬ = B if and only if logₓ B = A
+
+Several convenient equalities follow from this definition.
+
+Theorem 1.1
+================
+
+logₐ B = log꜀ B / log꜀ A, A, B, C > 0, A ≠ 1
+
+Proof
+================
+
+Let X = log꜀ B, Y = log꜀ A, and Z = logₐ B. Then, by the definition of logarithms, Cˣ = B, Cʸ = A, and Aᶻ = B. Combining these three equalities yields:
+
+B = Cˣ = (Cʸ)ᶻ
+
+Therefore,
+
+X = YZ implies Z = X / Y
+
+proving the theorem.
+
+Theorem 1.2
+================
+
+log(AB) = log A + log B, A, B > 0
+
+Proof
+================
+
+Let X = log A, Y = log B, and Z = log(AB). Then, assuming the default base of 2,
+
+2ˣ = A, 2ʸ = B, and 2ᶻ = AB
+
+Combining the last three equalities yields:
+
+2ˣ * 2ʸ = AB = 2ᶻ
+
+Therefore,
+
+X + Y = Z
+
+which proves the theorem.
+
+Some other useful formulas, which can all be derived in a similar manner, follow:
+
+log(A/B) = log A - log B
+
+log(Aᴮ) = B log A
+
+log X < X for all X > 0
+
+log 1 = 0, log 2 = 1, log 1024 = 10, log 1048576 = 20
+
