@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Ch1_ProgrammingOverview\\1.1_Overview",
-    "\\Ch2.1_Arrays_or_Vectors",
-    "\\Ch2.1_Arrays_or_Vectors\\memberFunctions"
+    "\\Ch2.1_Arrays"
   ],
-  "SelectedNode": "\\Ch2.1_Arrays_or_Vectors\\memberFunctions\\18_array_size.cpp",
+  "SelectedNode": "\\Ch2.1_Arrays",
   "PreviewInSolutionExplorer": false
 }
