@@ -2,24 +2,25 @@
 
 using namespace std;
 
-bool isEven(int n) {
-    int remainder = n % 2;
 
-    if (remainder == 0) 
+bool isEven(int n) {
+    if ((n & 1) == 0)
         return true;
-    else
+    else 
         return false;
 }
 
+
 int main() {
     cout << "Enter an integer to check even odd: ";
-    int num;
-    cin >> num;
-    
-    if (isEven(num))
+    int x;
+    cin >> x;
+
+    if (isEven(x))
         cout << "EVEN number";
-    else 
+    else
         cout << "ODD number";
     
     return 0;
+
 }
