@@ -1,4 +1,4 @@
-// Approach 1: Using Standard Division with Sign Correction O91) Time and O(1) Space
+// Approach 1: Using Standard Division with Sign Correction O(1) Time and O(1) Space
 
 #include<iostream>
 #include<vector>
