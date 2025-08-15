@@ -1,29 +1,29 @@
 using static System.Console;
 
+
 class Bitwise
 {
-    static int gcd(int a, int b)
+    static string decToBinary(int n)
     {
-        if (a == 0)
-            return b;
+        StringBuilder bin = new StringBuilder();
 
-        if (b == 0)
-            return a;
+        while (n > 0)
+        {
+            int bit = n & 1;
+            bin.Append(bit);
 
+            n = n >> 1;
+        }
 
-        if (a == b)
-            return a;
-
-        if (a > b)
-            return gcd(a - b, b);
-
-        return gcd(a, b - a);
+        char[] arr = bin.ToString().ToCharArray();
+        Array.Reverse(arr);
+        return new string(arr);
     }
 
 
     static void Main()
     {
-        int a = 20, b = 28;
-        WriteLine(gcd(a, b));
+        int n = 12;
+        WriteLine(decToBinary(n));
     }
 }
