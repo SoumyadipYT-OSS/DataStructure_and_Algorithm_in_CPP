@@ -26,6 +26,9 @@ int closestNumber(int n, int m)
 }
 
 
+int closestNumberByQuotient(int n, int m);
+
+
 int main() 
 {
     int N = 15;
@@ -33,5 +36,22 @@ int main()
 
     cout << closestNumber(N, M) << endl;
 
+    cout << closestNumberByQuotient(N, M) << endl;
+
     return 0;
+}
+
+
+
+// By finding Quotient - O(1) Time and O(1) Space
+int closestNumberByQuotient(int n, int m) 
+{
+    int q = n / m;
+    int n1 = m * q;
+    int n2 = (n * m) > 0 ? (m * (q + 1)) : (m * (q - 1));
+
+    if (abs(n - n1) < abs(n - n2))
+        return n1;
+    
+    return n2;
 }
