@@ -1,15 +1,30 @@
 #include <iostream>
-#include <memory>
+#include <memory>       // unique_ptr, make_unique (Here will use make_unique that is type safety of unique_ptr)
+
+
+class Machine 
+{
+private:
+    std::string m_machineName;
+
+public:
+    Machine(std::string machineName) 
+        : m_machineName(machineName)
+    {}
+   
+
+
+    void showDetails() 
+    {
+        std::cout << "Machine Name: " << m_machineName << "\n";
+    }
+};
 
 
 int main() 
 {
-    // Create a unique_ptr to manage an integer on the heap
-    std::unique_ptr<int> ptr(new int(42));
+    auto m1 = std::make_unique<Machine>("Carbon fiber polishing machine.");
+    m1->showDetails();
 
-    // Access and print the value through the pointer
-    std::cout << "Value: " << *ptr << std::endl;
-
-    // The unique_ptr will automatically delete the integer when it goes out of scope
     return 0;
 }
